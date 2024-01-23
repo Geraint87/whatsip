@@ -102,7 +102,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
   text-decoration: none;
-  background-color: rgba(42, 42, 42, 1);
+  background-color: #7f35b2;
 }
 .get-started:hover {
   opacity: 0.5;

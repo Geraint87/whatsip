@@ -53,13 +53,15 @@
           />
           <div class="navbar-nav-content">
             <div class="navbar-nav-links">
-              <span class="navbar-link nav-link">Features</span>
-              <span class="nav-link">Why us</span>
-              <span class="nav-link">Prices</span>
-              <span class="nav-link">Contact</span>
+              <a href="#home-features"><span class="navbar-link nav-link">Features</span></a>
+              <a href="#feedback"><span class="nav-link">Why us</span></a>
+              <a href="#pricing"><span class="nav-link">Prices</span></a>
+              <a href="#contact"><span class="nav-link">Contact</span></a>
             </div>
             <div class="get-started navbar-get-started">
-              <span class="navbar-text">Get started</span>
+              <a href="#get-started">
+                <span class="navbar-text">Get started</span>
+              </a>
             </div>
             <div id="open-mobile-menu" class="navbar-hamburger get-started">
               <img
@@ -73,7 +75,7 @@
             <div class="navbar-branding">
               <img
                 alt="image"
-                src="public/Branding/planical7012-ttpb.svg"
+                src="public/Branding/2 no-bg.png"
                 class="navbar-image1"
               />
               <div id="close-mobile-menu" class="navbar-container">
@@ -85,19 +87,21 @@
               </div>
             </div>
             <div class="navbar-nav-links1">
-              <span class="nav-link">Features</span>
-              <span class="nav-link">Why us</span>
-              <span class="nav-link">Prices</span>
-              <span class="nav-link">Contact</span>
+              <a href="#home-features"><span class="nav-link">Features</span></a>
+              <a href="#feedback"><span class="nav-link">Why us</span></a>
+              <a href="#pricing"><span class="nav-link">Prices</span></a>
+              <a href="#contact"><span class="nav-link">Contact</span></a>
             </div>
-            <div class="get-started">
-              <span class="navbar-text1">Get started</span>
+            <div id="navbar-get-started" class="get-started">
+              <a href="#get-started">
+                <span class="navbar-text1">Get started</span>
+              </a>
             </div>
           </div>
           <div>
             <div class="navbar-container2">
               <script>
-                    /*
+                /*
                 Mobile menu - Code Embed
                 */
 
@@ -124,7 +128,8 @@
 
                     // Buttons
                     const closeButton = document.querySelector('#close-mobile-menu')
-                    const openButton = document.querySelector('#open-mobile-menu')
+                    const openButton = document.querySelector('#open-mobile-menu')                   
+                    const getStartedButton = document.querySelector('#navbar-get-started')
 
                     // On openButton click, set the mobileMenu position left to -100vw
                     openButton && openButton.addEventListener('click', function() {
@@ -132,7 +137,12 @@
                     })
 
                     // On closeButton click, set the mobileMenu position to 0vw
-                    closeButton && closeButton.addEventListener('click', function() {
+                    // closeButton && closeButton.addEventListener('click', function() {
+                    //     mobileMenu.style.transform = 'translateX(100%)'
+                    // })
+                    
+                    // On click anywhere in the mobileMenu, set the mobileMenu position to 0vw
+                    mobileMenu && mobileMenu.addEventListener('click', function(e) {
                         mobileMenu.style.transform = 'translateX(100%)'
                     })
                 }
@@ -157,10 +167,12 @@
                 </header>
                 <div class="home-buttons">
                   <div class="home-get-started button">
-                    <span class="home-text">Get started</span>
+                    <a href="#get-started">
+                      <span class="home-text">Get started</span>
+                    </a>
                   </div>
                   <div class="home-get-started1 button">
-                    <span class="home-text01">View features</span>
+                    <a href="#home-features"><span class="home-text01">View features</span></a>
                   </div>
                 </div>
               </main>
@@ -203,7 +215,7 @@
             </div>
           </div>
         </section>
-        <section class="home-section01">
+        <section class="home-section01" id="get-started">
           <div class="home-note">
             <div class="home-content1">
               <main class="home-main1">
@@ -212,12 +224,17 @@
                 </h2>
                 <p class="home-paragraph">
                   <span>
-                    To create your first group, start by choosing a name (get creative!) Next, add your members, and choose the drinks you want to be available to the group from our extensive menu. And you're ready to go!
+                    To create your first group, start by choosing a name. Don't be scared to get creative! 
                   </span>
                   <br />
                   <br />
                   <span>
-                    Start your first round, and everyone in the group will get a notification to place their order. Once everyone has made their choice, you'll get a summary of the orders and then it's time to make the drinks!
+                    Next, add your members, and choose the drinks you want to be available to the group from our extensive menu. These could be the coffees available in the office break room, the café around the corner, or just plain water! 
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Now you're ready to go!
                   </span>
                   <br />
                 </p>
@@ -235,34 +252,34 @@
             </div>
           </div>
         </section>
-        <section class="home-section01">
+        <section id="home-features" class="home-section01">
           <h2 class="home-text02">
             Bringing the humble tea round into the digital age.
           </h2>
           <div class="home-features">
-            <header class="feature feature-active home-feature">
+            <header id="in-person-feature" class="feature feature-active home-feature">
               <h3 class="home-text03">In-person</h3>
               <p class="home-text04">Forgetting drink orders are a thing of the past!</p>
             </header>
-            <header class="feature home-feature1">
+            <header id="remote-feature"class="feature home-feature">
               <h3 class="home-text05">Remotely</h3>
               <p class="home-text06">Check in with your team, wherever you are.</p>
             </header>
           </div>
-          <!-- <div class="home-note">
+          <div id="in-person-feature-content" class="home-note">
             <div class="home-content1">
               <main class="home-main1">
                 <h2 class="home-heading01">
-                  Getting started is easy
+                  Start a round and let the drinks roll in
                 </h2>
                 <p class="home-paragraph">
                   <span>
-                    To create your first group, start by choosing a name (get creative!) Next, add your members, and choose the drinks you want to be available to the group from our extensive menu. And you're ready to go!
+                    Ever dreamt of being a Barista? Once you press Start that dream has come true! Everyone in the group will get a notification to place their order. When they've made their choice, you'll see a summary of the orders and then it's time to make the drinks!
                   </span>
                   <br />
                   <br />
                   <span>
-                    Start your first round, and everyone in the group will get a notification to place their order. Once everyone has made their choice, you'll get a summary of the orders and then it's time to make the drinks!
+                    Our fun, virtual credit based system keeps the rounds fair and easy to manage. Each drink order takes up one credit, and when you're out of credits, you can't take part in the round. Until of course, you collect some credits back by doing a round yourself!
                   </span>
                   <br />
                 </p>
@@ -274,12 +291,74 @@
             <div class="home-image07">
               <img
                 alt="image"
-                src="public/SectionImages/01 - groups 2 (Small).png"
+                src="public/SectionImages/start-a-round (Small).png"
                 class="home-image08"
               />
             </div>
-          </div> -->
+          </div>
+          <div id="remote-feature-content" class="home-note" style="display: 'none'">
+            <div class="home-content1">
+              <main class="home-main1">
+                <h2 class="home-heading01">
+                  Catch up with your group, on video
+                </h2>
+                <p class="home-paragraph">
+                  <span>
+                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    nesun et tutamen
+                  </span>
+                  <br />
+                </p>
+              </main>
+              <div class="home-explore-more">
+                <p class="home-text14">Explore more -&gt;</p>
+              </div>
+            </div>
+            <div class="home-image07">
+              <img
+                alt="image"
+                src="public/SectionImages/start-a-round (Small).png"
+                class="home-image08"
+              />
+            </div>
+          </div>
         </section>
+
+        <script>
+          const switchFeatureSection = () => {
+                    // Feature sections
+                    const inPersonFeatureHeader = document.querySelector('#in-person-feature')
+                    const inPersonFeatureContent = document.querySelector('#in-person-feature-content')
+
+                    const remoteFeatureHeader = document.querySelector('#remote-feature')                   
+                    const remoteFeatureContent = document.querySelector('#remote-feature-content')                   
+
+                    // On click, set the toggle the feature-active 
+                    inPersonFeatureHeader && inPersonFeatureHeader.addEventListener('click', function() {
+                      inPersonFeatureHeader.classList.add('feature-active')
+                      remoteFeatureHeader.classList.remove('feature-active')
+
+                      // Make inPersonFeatureContent visible and remoteFeatureContent invisible
+                      inPersonFeatureContent.style.display = 'flex'
+                      remoteFeatureContent.style.display = 'none'
+                    })
+
+                    remoteFeatureHeader && remoteFeatureHeader.addEventListener('click', function() {
+                      inPersonFeatureHeader.classList.remove('feature-active')
+                      remoteFeatureHeader.classList.add('feature-active')
+
+                      remoteFeatureContent.style.display = 'flex'
+                      inPersonFeatureContent.style.display = 'none'
+                    })
+                }
+
+                switchFeatureSection()
+        </script>
+
         <section class="home-section02">
           <!-- <header class="home-header01">
             <h2 class="home-text15">Starting a round</h2>
@@ -596,7 +675,7 @@
             </div>
           </main>
         </section>
-        <section class="home-section10">
+        <section id="pricing" class="home-section10">
           <div class="home-cube1">
             <div class="home-top1 side"></div>
             <div class="home-front1 side"></div>
@@ -1084,10 +1163,10 @@
             </div>
           </div>
         </section>
-        <section class="home-section12">
+        <section id="feedback" class="home-section12">
           <header class="home-header10">
             <header class="home-left4">
-              <span class="section-head">Tempor incididunt</span>
+              <span class="section-head">Feedback</span>
               <h2 class="home-heading14 section-heading">
                 What users say about us
               </h2>
@@ -1707,7 +1786,7 @@
                   <div class="home-header14">
                     <img
                       alt="image"
-                      src="public/Branding/planical7012-ttpb.svg"
+                      src="public/Branding/2 no-bg.png"
                       class="home-branding"
                     />
                     <span class="home-text42">
@@ -1787,7 +1866,7 @@
                 </span>
               </section>
             </main>
-            <main class="home-subscribe">
+            <main id="contact" class="home-subscribe">
               <main class="home-main5">
                 <h1 class="home-heading18">Subscribe to our newsletter</h1>
                 <div class="home-input-field">
@@ -1820,7 +1899,7 @@
         <div>
           <div class="home-container5">
             <script>
-                  /*
+              /*
               Accordion - Code Embed
               */
 
