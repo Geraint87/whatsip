@@ -35,7 +35,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&amp;display=swap"
       data-tag="font"
     />
   </head>
@@ -224,17 +224,17 @@
                 </h2>
                 <p class="home-paragraph">
                   <span>
-                    To create your first group, start by choosing a name. Don't be scared to get creative! 
+                    Create your first group in seconds—just pick a name and invite your friends or colleagues. 
                   </span>
                   <br />
                   <br />
                   <span>
-                    Next, add your members, and choose the drinks you want to be available to the group from our extensive menu. These could be the coffees available in the office break room, the café around the corner, or just plain water! 
+                    Add your favourite drinks to the group menu, from flat whites to herbal teas, or even water. Everyone can see the options and add their own preferences.
                   </span>
                   <br />
                   <br />
                   <span>
-                    Now you're ready to go!
+                    When you're ready, start a round and let the fun begin!
                   </span>
                   <br />
                 </p>
@@ -254,19 +254,19 @@
         </section>
         <section id="home-features" class="home-section01">
           <h2 class="home-text02">
-            Bringing the humble tea round into the digital age.
+            Bringing the humble tea round into the digital age—wherever you are.
           </h2>
           <div class="home-features">
             <header id="in-person-feature" class="feature feature-active home-feature">
               <h3 class="home-text03">In-person</h3>
-              <p class="home-text04">Forgetting drink orders are a thing of the past!</p>
+              <p class="home-text04">Never forget a drink order again—organise rounds, track credits, and keep everyone happy!</p>
             </header>
             <header id="remote-feature"class="feature home-feature">
               <h3 class="home-text05">Remotely</h3>
-              <p class="home-text06">Check in with your team, wherever you are.</p>
+              <p class="home-text06">Take a break together, even when working remotely—Whatsip brings the tea round to your screen.</p>
             </header>
           </div>
-          <div id="in-person-feature-content" class="home-note">
+          <div id="in-person-feature-content" class="home-note" style="display: flex">
             <div class="home-content1">
               <main class="home-main1">
                 <h2 class="home-heading01">
@@ -296,20 +296,20 @@
               />
             </div>
           </div>
-          <div id="remote-feature-content" class="home-note" style="display: 'none'">
+          <div id="remote-feature-content" class="home-note" style="display: none">
             <div class="home-content1">
               <main class="home-main1">
                 <h2 class="home-heading01">
-                  Catch up with your group, on video
+                  Take a virtual tea break with your team
                 </h2>
                 <p class="home-paragraph">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    Working remotely? Stay connected with your group by starting a virtual tea break. When you initiate a remote round, everyone receives a notification to join a 15-minute video call—bring your favourite drink and catch up, wherever you are!
                   </span>
                   <br />
                   <br />
                   <span>
-                    nesun et tutamen
+                    Whatsip makes it easy to keep the social spirit alive, even when you're apart.
                   </span>
                   <br />
                 </p>
@@ -329,6 +329,18 @@
         </section>
 
         <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const inPersonFeatureHeader = document.querySelector('#in-person-feature');
+            const inPersonFeatureContent = document.querySelector('#in-person-feature-content');
+            const remoteFeatureHeader = document.querySelector('#remote-feature');
+            const remoteFeatureContent = document.querySelector('#remote-feature-content');
+
+            inPersonFeatureHeader.classList.add('feature-active');
+            remoteFeatureHeader.classList.remove('feature-active');
+            inPersonFeatureContent.style.display = 'flex';
+            remoteFeatureContent.style.display = 'none';
+          });
+
           const switchFeatureSection = () => {
                     // Feature sections
                     const inPersonFeatureHeader = document.querySelector('#in-person-feature')
@@ -360,34 +372,25 @@
         </script>
 
         <section class="home-section02">
-          <!-- <header class="home-header01">
-            <h2 class="home-text15">Starting a round</h2>
-            <span class="home-text16">
-              Receive notifications to your phone, email, and MS Teams.
-            </span>
-          </header> -->
           <section class="home-note1">
             <div class="home-image09">
               <img
                 alt="image"
-                src="public/SectionImages/group%201428-1200w.png"
+                src="public/SectionImages/start-a-round (Small).png"
                 class="home-image10"
               />
             </div>
             <div class="home-content2">
               <div class="home-main2">
                 <div class="home-caption2">
-                  <span class="section-head">Tempor incididunt</span>
+                  <span class="section-head">How it works</span>
                 </div>
                 <div class="home-heading02">
                   <h2 class="section-heading">
                     Start a round and let the drinks roll in
                   </h2>
                   <p class="section-description">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae.
+                    Organise a tea or coffee round in seconds. Everyone gets a notification to place their order, and you’ll see a summary of all drinks to prepare. No more missed orders or confusion—just more time to enjoy your break together!
                   </p>
                 </div>
               </div>
@@ -408,7 +411,7 @@
               <main class="home-main3">
                 <header class="home-caption3">
                   <span class="home-section04 section-head">
-                    Tempor incididunt
+                    Rate your drinks
                   </span>
                 </header>
                 <main class="home-heading04">
@@ -417,8 +420,7 @@
                       Rate your drink!
                     </h2>
                     <p class="section-description">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium.
+                      After your round, rate your drink and give feedback. Help your team perfect their barista skills and keep every round fun!
                     </p>
                   </header>
                   <div class="home-checkmarks">
@@ -431,7 +433,7 @@
                         </svg>
                       </div>
                       <p class="mark-label">
-                        <span>Duis aute irure dolor in reprehenderit</span>
+                        <span>Track who made the best brew</span>
                       </p>
                     </div>
                     <div class="mark-mark">
@@ -443,7 +445,7 @@
                         </svg>
                       </div>
                       <p class="mark-label">
-                        <span>Quis nostrud exercitation ullamco</span>
+                        <span>See everyone’s preferences at a glance</span>
                       </p>
                     </div>
                     <div class="mark-mark">
@@ -455,7 +457,7 @@
                         </svg>
                       </div>
                       <p class="mark-label">
-                        <span>Reprehenderit qui in ea voluptate velit</span>
+                        <span>Earn credits for making rounds</span>
                       </p>
                     </div>
                   </div>
@@ -470,7 +472,7 @@
         <section class="home-section05">
           <header class="home-header03">
             <header class="home-left">
-              <span class="section-head">Tempor incididunt</span>
+              <span class="section-head">Our trusted providers</span>
               <h2 class="section-heading">
                 <span>Meet our network</span>
                 <br />
@@ -479,8 +481,7 @@
             </header>
             <div class="home-right">
               <p class="home-paragraph3 section-description">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                Our network of providers helps make every round possible—whether you're in the office, at home, or anywhere in between. Enjoy seamless drink rounds and virtual breaks with Whatsip.
               </p>
             </div>
           </header>
@@ -497,8 +498,7 @@
                 <h1 class="card-header"><span>Sima Mosbacher</span></h1>
                 <p class="card-description">
                   <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium
+                    Sima is our top-rated provider, known for her attention to detail and friendly service. She’s helped hundreds of teams enjoy their breaks!
                   </span>
                 </p>
               </main>
@@ -512,11 +512,10 @@
                 />
               </div>
               <main class="card-content">
-                <h1 class="card-header"><span>Sima Mosbacher</span></h1>
+                <h1 class="card-header"><span>Alex Johnson</span></h1>
                 <p class="card-description">
                   <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium
+                    Alex brings a smile to every round, making sure everyone gets their favourite drink just right.
                   </span>
                 </p>
               </main>
@@ -530,11 +529,10 @@
                 />
               </div>
               <main class="card-content">
-                <h1 class="card-header"><span>Sima Mosbacher</span></h1>
+                <h1 class="card-header"><span>Jamie Lee</span></h1>
                 <p class="card-description">
                   <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium
+                    Jamie is a pro at keeping remote teams connected with virtual tea breaks and great conversation.
                   </span>
                 </p>
               </main>
@@ -552,7 +550,7 @@
             </div>
             <div class="home-content4">
               <div class="home-caption4">
-                <span class="section-head">Tempor incididunt</span>
+                <span class="section-head">Why choose Whatsip?</span>
               </div>
               <div class="home-heading07">
                 <div class="home-header04">
@@ -567,7 +565,7 @@
                   >
                     <div class="accordion-details">
                       <span class="accordion-text">
-                        <span>Aliquam quaerat voluptatem</span>
+                        <span>How do I start a tea round?</span>
                       </span>
                       <span
                         data-role="accordion-content"
@@ -595,7 +593,7 @@
                   >
                     <div class="accordion-details1">
                       <span class="accordion-text2">
-                        <span>Nemo enim ipsam voluptatem quia voluptas</span>
+                        <span>Can I use Whatsip for remote teams?</span>
                       </span>
                       <span
                         data-role="accordion-content"
@@ -623,15 +621,14 @@
                   >
                     <div class="accordion-details2">
                       <span class="accordion-text4">
-                        <span>Magnam aliquam quaerat voluptatem</span>
+                        <span>What makes Whatsip different from other apps?</span>
                       </span>
                       <span
                         data-role="accordion-content"
                         class="accordion-text5"
                       >
                         <span>
-                          Sed do eiusmod tempor incididunt ut labore et dolore
-                          magna aliquat enim ad minim veniam, quis nostrud
+                          Whatsip is designed for both in-person and remote teams, making it easy to organise drink rounds, track credits, and stay social wherever you work. Our credits system and group features keep things fair and fun for everyone.
                         </span>
                       </span>
                     </div>
@@ -691,8 +688,7 @@
               </header>
               <div class="home-right1">
                 <p class="home-paragraph4 section-description">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam.
+                  Choose the plan that fits your team. All plans include unlimited rounds, notifications, and access to our friendly support team.
                 </p>
               </div>
             </header>
@@ -716,8 +712,7 @@
                       </div>
                     </div>
                     <p class="home-description1">
-                      Good for sed quia consequuntur magni dolores eos qui
-                      ratione.
+                      Perfect for small teams who want to organise rounds and keep things fair and fun.
                     </p>
                   </div>
                   <div class="home-buy-details">
@@ -739,7 +734,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Unlimited drink rounds</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -751,7 +746,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Basic notifications</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -763,7 +758,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Track credits</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -775,7 +770,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Group management</span>
                           </label>
                         </div>
                         <div class="excludes-mark excludes-root-class-name">
@@ -787,67 +782,7 @@
                             </svg>
                           </div>
                           <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Priority support</span>
                           </label>
                         </div>
                       </div>
@@ -864,8 +799,7 @@
                       </div>
                     </div>
                     <p class="home-description2">
-                      Good for sed quia consequuntur magni dolores eos qui
-                      ratione.
+                      For growing teams who need advanced features and integrations.
                     </p>
                   </div>
                   <div class="home-buy-details1">
@@ -887,7 +821,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Everything in Basic</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -899,7 +833,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Advanced notifications</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -911,7 +845,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Integrations (Slack, Teams)</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -923,7 +857,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Custom group branding</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -935,67 +869,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="excludes-mark excludes-root-class-name">
-                          <div class="excludes-icon">
-                            <svg viewBox="0 0 1024 1024" class="excludes-icon1">
-                              <path
-                                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="excludes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Priority support</span>
                           </label>
                         </div>
                       </div>
@@ -1012,8 +886,7 @@
                       </div>
                     </div>
                     <p class="home-description3">
-                      Good for sed quia consequuntur magni dolores eos qui
-                      ratione.
+                      For large organisations with custom needs. Contact us for a tailored solution.
                     </p>
                   </div>
                   <div class="home-buy-details2">
@@ -1035,7 +908,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>All Professional features</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -1047,7 +920,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Dedicated account manager</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -1059,7 +932,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Custom integrations</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -1071,7 +944,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Onboarding & training</span>
                           </label>
                         </div>
                         <div class="includes-mark includes-root-class-name">
@@ -1083,67 +956,7 @@
                             </svg>
                           </div>
                           <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
-                          </label>
-                        </div>
-                        <div class="includes-mark includes-root-class-name">
-                          <div class="includes-icon">
-                            <svg viewBox="0 0 1024 1024" class="includes-icon1">
-                              <path
-                                d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                              ></path>
-                            </svg>
-                          </div>
-                          <label class="includes-label">
-                            <span>Sed ut pespiciatis unde omnis</span>
+                            <span>Enterprise support</span>
                           </label>
                         </div>
                       </div>
@@ -1173,8 +986,7 @@
             </header>
             <div class="home-right2">
               <p class="home-paragraph5 section-description">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
+                Our users love how Whatsip brings their teams together, whether in the office or working remotely. Here’s what they have to say:
               </p>
             </div>
           </header>
@@ -1207,8 +1019,7 @@
                 <main class="review-content">
                   <p class="review-quote">
                     <span>
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor.”
+                      “Whatsip helps our team connect and unwind. The app makes organising rounds effortless and fun!”
                     </span>
                   </p>
                   <div class="review-author">
@@ -1259,11 +1070,7 @@
                 <main class="review-content">
                   <p class="review-quote">
                     <span>
-                      “Ut enim ad minima veniam, quis nostrum exercitationem
-                      ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                      commodi consequatur.Quis autem vel eum iure
-                      reprehenderit qui in ea voluptate velit esse quam nihil
-                      molestiae consequatur.”
+                      “As a remote worker, I love the virtual tea breaks. It keeps our team connected and gives us a reason to chat!”
                     </span>
                   </p>
                   <div class="review-author">
@@ -1316,9 +1123,7 @@
                 <main class="review-content">
                   <p class="review-quote">
                     <span>
-                      “Illum dolore eu fugiat nulla pariatur. Excepteur sint
-                      occaecat cupidatat non proident, sunt in culpa qui officia
-                      deserunt mollit anim id est laborum.”
+                      “Whatsip is the perfect way to keep our hybrid team engaged. The credits system is genius!”
                     </span>
                   </p>
                   <div class="review-author">
@@ -1369,8 +1174,7 @@
                 <main class="review-content">
                   <p class="review-quote">
                     <span>
-                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor.”
+                      “We’ve tried other apps, but Whatsip is by far the easiest and most fun for organising rounds.”
                     </span>
                   </p>
                   <div class="review-author">
@@ -1403,7 +1207,7 @@
                     <path
                       d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
                     ></path>
-                  </svg>
+                    </svg>
                     <svg viewBox="0 0 1024 1024" class="review-icon04">
                     <path
                       d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
@@ -1423,10 +1227,7 @@
                 <main class="review-content">
                   <p class="review-quote">
                     <span>
-                      “Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi architecto beatae.”
+                      “Our team loves the friendly competition to see who makes the best brew. Whatsip makes every break special!”
                     </span>
                   </p>
                   <div class="review-author">
@@ -1477,8 +1278,7 @@
                 <main class="review-content">
                   <p class="review-quote">
                     <span>
-                      “Doloremque laudantium, totam rem aperiam, eaque ipsa quae
-                      ab illo inventore veritatis et quasi architecto beatae.”
+                      “Whatsip brings our team together every day. It’s simple, fun, and keeps our tea breaks organised!”
                     </span>
                   </p>
                   <div class="review-author">
@@ -1517,8 +1317,7 @@
                 </header>
                 <p class="article-description">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor.
+                    Whatsip is the app bringing the classic tea round into the digital age, making group drinks and social breaks easy for everyone.
                   </span>
                 </p>
                 <div class="article-button">
@@ -1540,8 +1339,7 @@
                 </header>
                 <p class="article-description">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor.
+                    With Whatsip, remote and hybrid teams can enjoy spontaneous virtual breaks and keep the social spirit alive.
                   </span>
                 </p>
                 <div class="article-button">
@@ -1563,8 +1361,7 @@
                 </header>
                 <p class="article-description">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor.
+                    Sifted says Whatsip is the must-have app for teams who want to stay connected and keep the tradition of tea rounds alive in the digital age.
                   </span>
                 </p>
                 <div class="article-button">
@@ -1596,15 +1393,10 @@
               >
                 <div class="faq-details">
                   <span class="faq-text">
-                    What is sit amet, consectetur adipiscing elit, sed do?
+                    What is Whatsip?
                   </span>
                   <span data-role="accordion-content" class="faq-text01">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id.
+                    Whatsip is a mobile app that helps groups organise drink rounds and virtual tea breaks, making it easy to connect whether you’re in the office or working remotely.
                   </span>
                 </div>
                 <div data-role="accordion-icon">
@@ -1621,16 +1413,10 @@
               >
                 <div class="faq-details1">
                   <span class="faq-text02">
-                    We'll update amet, consectetur adipiscing elit until you're
-                    100% happy.
+                    How do I start a round?
                   </span>
                   <span data-role="accordion-content" class="faq-text03">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id.
+                    Simply create a group, add your members, and tap 'Start a round'. Everyone gets a notification to place their drink order, and the organiser receives a summary of all selections.
                   </span>
                 </div>
                 <div data-role="accordion-icon">
@@ -1647,15 +1433,10 @@
               >
                 <div class="faq-details2">
                   <span class="faq-text04">
-                    Is it really sit amet, consectetur adipiscing elit, sed do?
+                    Can I use Whatsip for remote teams?
                   </span>
                   <span data-role="accordion-content" class="faq-text05">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id.
+                    Yes! Whatsip lets you start a virtual tea break, sending a video call invite to your group so you can catch up over a drink, wherever you are.
                   </span>
                 </div>
                 <div data-role="accordion-icon">
@@ -1672,16 +1453,10 @@
               >
                 <div class="faq-details3">
                   <span class="faq-text06">
-                    We work, what is sit amet, consectetur adipiscing elit, sed
-                    do sint occaecat cupidatat non proident
+                    What is the credits system?
                   </span>
                   <span data-role="accordion-content" class="faq-text07">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id.
+                    Credits help keep rounds fair. Each time you join a round, you use a credit. When you do a round for others, you earn credits back!
                   </span>
                 </div>
                 <div data-role="accordion-icon">
@@ -1698,15 +1473,10 @@
               >
                 <div class="faq-details4">
                   <span class="faq-text08">
-                    What is sit amet, consectetur adipiscing elit, sed do?
+                    Is Whatsip free?
                   </span>
                   <span data-role="accordion-content" class="faq-text09">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id.
+                    Whatsip is free for small groups. We offer premium plans for larger teams and extra features—see our pricing section for details.
                   </span>
                 </div>
                 <div data-role="accordion-icon">
@@ -1723,16 +1493,10 @@
               >
                 <div class="faq-details5">
                   <span class="faq-text10">
-                    Amet, consectetur adipiscing elit mollit anim id est
-                    laborum.
+                    How do I update my group or drink preferences?
                   </span>
                   <span data-role="accordion-content" class="faq-text11">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum
-                    sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id.
+                    You can update your group details or drink preferences anytime from the app settings. Just tap on your group or profile to make changes.
                   </span>
                 </div>
                 <div data-role="accordion-icon">
@@ -1790,7 +1554,7 @@
                       class="home-branding"
                     />
                     <span class="home-text42">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Bringing people together, one round at a time.
                     </span>
                   </div>
                   <div class="home-socials">
